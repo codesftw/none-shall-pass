@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Level 4</title>
+    <title>Level 1</title> <!-- TODO: Change level number -->
     <style>
       body {
         display: flex;
@@ -36,7 +36,7 @@
       }
 
       button {
-        position: absolute;
+        margin-bottom: auto;
         font-size: 2rem;
         padding: 1rem 2rem;
         border-radius: 0.5rem;
@@ -44,26 +44,21 @@
     </style>
   </head>
   <body>
-    <h1 class="level-heading">Level 4</h1>
+    <h1 class="level-heading">Level 1</h1> <!-- TODO: Change level number -->
 
     <button disabled onclick="onClick()">
-      Click to feel loved
-      <!-- TODO: Change button text to something more joyful -->
+      Click to feel like you've done something <!-- TODO: Change button text to something more joyful -->
     </button>
 
-    <a href="../level5/index.html" class="next-link hidden">
-      <!-- TODO: Change level number -->
+    <a href="./level2/index.html" class="next-link hidden"> <!-- TODO: Change level number -->
       Click to go to next level
     </a>
     <script>
-      const button = document.querySelector("button");
-      window.addEventListener("mousemove", function (event) {
-        button.style.top = event.clientY - 80 + "px";
-      });
-
       function onClick() {
         document.querySelector(".next-link").classList.remove("hidden");
       }
     </script>
   </body>
 </html>
+
+
