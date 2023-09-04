@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Level 5</title>
-    <!-- TODO: Change level number -->
+    <title>Level 1</title> <!-- TODO: Change level number -->
     <style>
       body {
         display: flex;
@@ -45,31 +44,20 @@
     </style>
   </head>
   <body>
-    <h1 class="level-heading">Level 5</h1>
-    <!-- TODO: Change level number -->
+    <h1 class="level-heading">Level 1</h1> <!-- TODO: Change level number -->
 
-    <button onclick="onClick()">This one is enabled</button>
+    <button disabled onclick="onClick()">
+      Click to feel like you've done something <!-- TODO: Change button text to something more joyful -->
+    </button>
 
-    <a href="../underConstrutction.html" class="next-link hidden">
-      <!-- TODO: Change level number -->
+    <a href="./level2/index.html" class="next-link hidden"> <!-- TODO: Change level number -->
       Click to go to next level
     </a>
     <script>
-      const button = document.querySelector("button");
-
-      button.addEventListener("mouseover", function () {
-        button.setAttribute("disabled", true);
-        button.innerHTML = "This one is disabled";
-      });
-
-      button.addEventListener("mouseout", function () {
-        button.removeAttribute("disabled");
-        button.innerHTML = "This one is enabled";
-      });
-
       function onClick() {
         document.querySelector(".next-link").classList.remove("hidden");
       }
     </script>
   </body>
 </html>
+
